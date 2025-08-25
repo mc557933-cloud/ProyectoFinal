@@ -23,7 +23,7 @@ def call_openai(prompt, model="gpt-4o-mini"):
     """
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
-        return "⚠️ Modo demo: no hay OPENAI_API_KEY configurada. Respuesta simulada: " + prompt[:180]
+        return " Modo demo: no hay OPENAI_API_KEY configurada. Respuesta simulada: " + prompt[:180]
 
     try:
         # Importacion perezosa para evitar error si no esta instalada la libreria en tiempo de empaquetado.
